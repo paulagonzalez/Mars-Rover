@@ -18,7 +18,7 @@ function goForward(rover) {
       rover.position[1]--
       break;
   }
-
+}
   function goBackwards(rover) {
     switch(rover.direction) {
       case 'N':
@@ -34,6 +34,7 @@ function goForward(rover) {
         rover.position[1]++
         break;
     }
+}
     function goRight(rover) {
       switch(rover.direction) {
         case 'N':
@@ -49,6 +50,7 @@ function goForward(rover) {
           rover.direction:'N'
           break;
       }
+}
       function goLeft(rover) {
         switch(rover.direction) {
           case 'N':
@@ -66,5 +68,13 @@ function goForward(rover) {
         }
 }
 
-var prompt = require ("rover");
-console.log("Introduce el nuevo recorrido");
+var myIndications = prompt ("Introduce el recorrido del rover");
+
+var f = goForward
+var b = goBackwards
+var l = goLeft
+var r = goRight
+
+function position (myRover + myIndications);
+
+alert ('La posición final del rover es '+ position);
